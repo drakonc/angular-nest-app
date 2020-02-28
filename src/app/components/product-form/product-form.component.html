@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)="edit ? updateProduct() : submitProduct()">
+                <div class="form-group">
+                    <label for="nameID">Nombre del Producto</label>
+                    <input type="text" name="name" class="form-control" id="nameID" autofocus
+                        [(ngModel)]="product.name">
+                </div>
+                <div class="form-group">
+                    <label for="descriptionID">Descripción del Producto</label>
+                    <input type="text" name="description" class="form-control" id="descriptionID"
+                        [(ngModel)]="product.description">
+                </div>
+                <div class="form-group">
+                    <label for="priceID">Precio del Producto</label>
+                    <input type="text" name="price" class="form-control" id="priceID" autofocus
+                        [(ngModel)]="product.price">
+                </div>
+                <div class="form-group">
+                    <label for="imageID">Imagen del Producto</label>
+                    <input type="text" name="image" class="form-control" id="imageID" autofocus
+                        [(ngModel)]="product.imagenURL">
+                </div>
+                <button class="btn btn-primary btn-block">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
